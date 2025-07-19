@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coming Soon | Redbird Glassware</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Redbird Glassware is launching soon. Premium drinkware, thoughtfully designed." />
+  <link rel="icon" href="images/logos/logo-static-gold.png">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4AF37',
+            wine: '#722F37',
+            dark: '#1A1A1A',
+          },
+          backgroundImage: {
+            'gradient-premium': 'linear-gradient(to bottom right, #1A1A1A, #722F37)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Alpine.js (optional for future use) -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-gradient-premium text-white font-sans min-h-screen flex items-center justify-center px-4">
+
+  <div class="max-w-2xl text-center space-y-8">
+    <!-- Logo -->
+    <img src="images/logos/logo-static-gold.png" alt="Redbird Logo" class="mx-auto w-80 h-auto animate-bounce" />
+
+    <!-- Heading -->
+    <!-- <h1 class="text-4xl md:text-5xl font-bold text-gold">Redbird Glassware is Coming Soon</h1> -->
+    <h1 class="text-4xl md:text-6xl font-semibold text-gold tracking-tight">
+        Launching Soon
+      </h1>
+      
+      
+    
+    <p class="text-gray-300 text-lg">
+      Premium Juice, wine, whiskey & cocktail glassware launching shortly. Stay tuned!
+    </p>
+
+    <!-- Optional: Notify or Subscribe -->
+    <form action="https://formspree.io/f/xyzpzygz" method="POST" class="flex flex-col sm:flex-row gap-3 justify-center">
+      <input type="email" name="email" placeholder="support@redbirdglassware.com" required
+      class="w-full sm:w-[260px] px-3 py-2 rounded text-dark focus:outline-none" />
+      <button type="submit"
+              class="bg-gold text-dark px-6 py-2 rounded hover:bg-gold/80 transition font-medium">
+        Notify Me
+      </button>
+    </form>
+
+    <!-- Social -->
+    <div class="mt-6 flex justify-center space-x-6 text-xl text-gold">
+      <a href="https://instagram.com/redbirdglassware" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://threads.net/@redbirdglassware" target="_blank"><i class="fas fa-at"></i></a>
+      <a href="https://youtube.com/@redbirdglassware" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://in.pinterest.com/redbirdglassware/" target="_blank"><i class="fab fa-pinterest"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <p class="text-sm text-gray-400 mt-10">
+      © <span x-text="new Date().getFullYear()"></span> 2025 Redbird Glassware. All rights reserved.
+    </p>
+  </div>
+
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
