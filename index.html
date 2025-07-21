@@ -85,10 +85,10 @@
       if (r.ok) success = true;
     })"
   action="https://formspree.io/f/xyzpzygz" method="POST"
-  class="flex flex-col sm:flex-row gap-3 justify-center"
+  class="flex flex-col items-center sm:flex-row gap-3 justify-center w-full"
 >
   <template x-if="!success">
-    <div class="flex flex-col sm:flex-row gap-3 w-full">
+    <div class="flex flex-col sm:flex-row gap-3 items-center justify-center w-full">
       <input type="email" name="email" placeholder="support@redbirdglassware.com" required
       class="w-full sm:w-[260px] px-3 py-2 rounded text-dark focus:outline-none" />
       <button type="submit"
@@ -99,9 +99,10 @@
   </template>
 
   <template x-if="success">
-    <p class="text-green-400 text-sm font-semibold">Thank you! We'll notify you when we launch.</p>
+    <p class="text-green-400 text-sm font-semibold text-center">Thank you! We'll notify you when we launch.</p>
   </template>
 </form>
+
 
 
     <!-- Social -->
